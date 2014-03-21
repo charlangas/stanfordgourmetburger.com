@@ -301,8 +301,7 @@ p .glyphicon {
 
   .badgeImage {
     max-height: 30%;
-    vertical-align: center;
-    max-width: 30%;
+    vertical-align: middle;
   }
   .callout,
   .header {
