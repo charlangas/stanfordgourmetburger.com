@@ -306,7 +306,7 @@ p .glyphicon {
   }
   .callout,
   .header {
-    background-size: 600px;
+    background-size: auto;
   }
 
   h1 {
