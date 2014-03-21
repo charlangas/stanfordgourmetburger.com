@@ -1,0 +1,339 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* fix bs3 horizontal scrollbar bug */
+.row { margin: 0; padding: 0 }
+
+
+
+/* TYPOGRAPHY */
+
+h1, h2, h3, h4 {
+  font-family: 'Chau Philomene One', sans-serif;
+  text-transform: uppercase;
+}
+
+h1 {
+  color:#eeeeee;
+  font-size:5em;
+  letter-spacing: -0.5px;
+  line-height: 1em;
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 3em;
+  padding-bottom: 1em;
+}
+
+p {
+  font-family: 'Dosis', sans-serif;
+}
+
+/*
+FONT FACE
+*/
+
+@font-face {
+    font-family: 'norwester';
+    src: url('fonts/norwester.eot');
+    src: url('fonts/norwester.eot?#iefix') format('embedded-opentype'),
+         url('fonts/norwester.woff') format('woff'),
+         url('fonts/norwester.ttf') format('truetype'),
+         url('fonts/norwester.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+/*img.grayscale {
+    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 10+, Firefox on Android */
+    filter: gray; /* IE6-9 */
+    -webkit-filter: grayscale(100%); /* Chrome 19+, Safari 6+, Safari 6+ iOS */*/
+}
+
+.scroll-down a, .scroll-top a {
+   color:#ffffff;
+}
+
+.scroll-down {
+   bottom:20%;
+   color:#f9f9f9;
+   right:0%;
+   position:fixed;
+}
+
+.scroll-top {
+  background-color:#33ee67;
+}
+
+
+
+/* BUTTONS */
+
+.btn {
+  background-color: #b72016;
+   border: none;
+   border-radius: 3px;
+   box-shadow: 0 6px #8c1911;
+   color: #fff;
+   font-size: 1.3em;
+   font-weight: bold;
+   font-family: verdana, arial, sans-serif;
+   letter-spacing: 1.6px;
+  margin: 10px;
+   padding:25px;
+   position: relative;
+   text-transform: uppercase;
+}
+
+.btn:hover {
+   background-color:#b72016;
+   box-shadow: 0 3px #8c1911;
+   color: #fff;
+   top: 3px;
+}
+
+.btn:active {
+  background-color: #ab1f15;
+   box-shadow: 0 0 #b72016;
+   top: 6px;
+}
+
+.call-to-action {
+  background: #eeeeee;
+  padding: 50px 0;
+}
+
+.call-to-action .btn {
+  margin: 10px;
+}
+
+
+
+/* NAVBAR */
+
+.icon-bar {
+   background-color: #b72016;
+}
+
+.navbar a {
+  color:#fff;
+  text-transform: uppercase;
+}
+
+.navbar-bold {
+  background-color: rgba(0,0,0,0.3);
+  font-family:Verdana,Arial,sans-serif;
+  font-weight: bold;
+}
+
+.navbar-bold:hover {
+  background-color: rgba(0,0,0,0.85);
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.navbar-bold.affix {
+  background-color: rgba(0,0,0,0.3);
+}
+
+.navbar-bold li a:hover {
+  background-color: rgba(0,0,0,0.2);
+}
+
+.navbar-bold li.active {
+  background-color:  rgba(0,0,0,0.0);
+  border-bottom: 5px solid #b72016;
+}
+
+.navbar-nav li a {
+  padding: 25px;
+}
+
+
+
+/* LAYOUT */
+
+.blurb {
+  background-color:#fefefe;
+}
+
+.blurb .panel {
+  background-color:transparent;
+}
+
+.blurb h2 {
+  color: #8c1911;
+  padding-top: 45px;
+}
+
+.bright {
+  background: #7fbbda url('images/gallery001.jpg') no-repeat center center fixed;
+  color:#fff;
+}
+
+.callout {
+  background: url("http://www.stanfordgourmetburger.com/images/library.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: #ffffff;
+  height: 650px;
+  padding-top:7%;
+  width: 100%;
+}
+
+.customCallout {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: #ffffff;
+  margin: auto;
+  padding-top:7%;
+  width: 100%;
+}
+
+#direccion {
+  padding-bottom: 40px;
+}
+
+.featurette {
+  background: #fefefe;
+  color: #333;
+  padding: 50px 0;
+}
+
+.featurette h2 {
+  color: #8c1911;
+}
+
+.featurette-item {
+  margin-bottom: 15px;
+}
+
+.featurette p {
+  font-size: 1.1em;
+  line-height: 1.6em;
+  text-align: left;
+}
+
+.featurette-item p strong {
+  font-weight: bold;
+}
+
+footer {
+  padding: 50px 0;
+}
+
+.gallery {
+  padding: 50px 0;
+}
+
+.header {
+  background:  #333 url("http://www.stanfordgourmetburger.com/images/gallery001.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 650px;
+}
+
+.header h1 {
+  color:#fff;
+  margin-left:-5px;
+  margin-bottom:5px;
+  padding-top: 30px;
+}
+
+.header img {
+  height: 25%;
+  padding-top: 40px;
+  width: 25%;
+}
+
+.iconSmall {
+  font-size: .8em;
+  padding-left: 7px;
+}
+
+iframe {
+  height: 400px;
+  width: 100%;
+}
+
+p .glyphicon {
+  color: #b72016;
+  padding-right: 8px;
+}
+
+.vert {
+  padding-top:4%;
+  vertical-align: middle;
+  width:100%;
+}
+
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media only screen and (max-width: 767px) {
+    /* phones */
+
+  a.btn {
+    font-size: .8em;
+    letter-spacing: 1px;
+    width: 100%;
+  }
+
+  .badgeImage {
+    max-height: 30%;
+    vertical-align: center;
+    max-width: 30%;
+  }
+  .callout,
+  .header {
+    background-size: 600px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+   h4 {
+    padding-top: 15px;
+  }
+
+  .header img {
+    height: 20em;
+    padding: 40px;
+    width: 20em;
+  }
+
+  .social {
+    padding-bottom: 10px;
+  }
+
+}
+
+@media only screen and (max-width: 767px) and (orientation: portrait) {
+    /* portrait phones */
+
+}
